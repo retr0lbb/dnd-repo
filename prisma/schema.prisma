@@ -26,4 +26,14 @@ model caracter {
   experience_points Int?     @default(0)
   created_at        DateTime @default(now())
   playerId          String
+
+  class      String
+  level      Int
+  background String
+  race       String
+
+  armour_class  Int
+  speed         Int
+  initiative    Int
+  health_points Int
 }
