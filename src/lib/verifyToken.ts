@@ -15,7 +15,6 @@ export function verifyToken(req:FastifyRequest, res: FastifyReply, next: any){
         return res.status(400).send({message: "Missing token"});
     }
 
-
     try {
         const tokenSecrete = process.env.SECRETE_JWT;
         if(!tokenSecrete){
